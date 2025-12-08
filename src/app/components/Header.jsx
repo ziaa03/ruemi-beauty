@@ -569,7 +569,7 @@ const RuemiBeautyWebsite = () => {
               <div className="space-y-6">
                 <div>
                   <p className="text-neutral-400 mb-2">Studio Location</p>
-                  <p className="text-lg">[Your Address]<br/>[City, State, Postal Code]</p>
+                  <p className="text-lg">MJC Batu Kawah<br/>Kuching, Sarawak 93250</p>
                 </div>
                 
                 <div>
