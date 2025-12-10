@@ -126,7 +126,7 @@ const RuemiBeautyWebsite = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'services', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'services', 'testimonials'];
       const scrollPosition = window.scrollY + 100;
       
       sections.forEach(section => {
@@ -164,21 +164,15 @@ const RuemiBeautyWebsite = () => {
 
   const testimonials = [
     {
-      quote: "The attention to detail is extraordinary. Every lash is placed with precision and care. I've never felt more confident.",
-      name: "Sarah Chen",
-      title: "Marketing Director",
+      quote: "Thanks!! I really like the lift, it's very nice and natural 💕",
       rating: 5
     },
     {
-      quote: "Professional, hygienic, and absolutely stunning results. The consultation process was thorough and personalized.",
-      name: "Michelle Rodriguez",
-      title: "Interior Designer", 
+      quote: "Hello miss, just wanna say that i really lovee the lashes😍 you did a nice jobb. will 100% come back to you again & recommend to my friends",
       rating: 5
     },
     {
-      quote: "Exceptional artistry and technique. The lashes look completely natural yet dramatically enhance my eyes.",
-      name: "Amanda Kim",
-      title: "Executive",
+      quote: "It feels super lightweight, really love it. Its like I'm not even wearing extensions!",
       rating: 5
     }
   ];
@@ -208,8 +202,7 @@ const RuemiBeautyWebsite = () => {
                 { name: 'Home', id: 'home' },
                 { name: 'About', id: 'about' },
                 { name: 'Services', id: 'services' },
-                { name: 'Reviews', id: 'testimonials' },
-                { name: 'Contact', id: 'contact' }
+                { name: 'Reviews', id: 'testimonials' }
               ].map(({ name, id }) => (
                 <button
                   key={id}
@@ -255,8 +248,7 @@ const RuemiBeautyWebsite = () => {
                 { name: 'Home', id: 'home' },
                 { name: 'About', id: 'about' },
                 { name: 'Services', id: 'services' },
-                { name: 'Reviews', id: 'testimonials' },
-                { name: 'Contact', id: 'contact' }
+                { name: 'Reviews', id: 'testimonials' }
               ].map(({ name, id }) => (
                 <button
                   key={id}
@@ -342,7 +334,7 @@ const RuemiBeautyWebsite = () => {
             <div className="space-y-8">
               <div>
                 <p className="text-sm font-medium tracking-widest uppercase text-neutral-500 mb-4">
-                  About the Artist
+                  About Ruemi Beauty
                 </p>
                 <h2 className="text-4xl lg:text-5xl font-light leading-tight mb-6">
                   Crafting Beauty
@@ -352,10 +344,10 @@ const RuemiBeautyWebsite = () => {
               
               <div className="space-y-6 text-lg text-neutral-600 leading-relaxed">
                 <p>
-                  With over five years of specialized training in lash artistry, I bring a meticulous approach to enhancing natural beauty. Each application is tailored to complement your unique eye shape and personal style.
+                  Ruemi Beauty is your go-to destination for personalized beauty experiences. We specialize in enhancing your natural beauty with expertly applied eyelash extensions and keratin lash lifts. Our goal is to provide a comfortable and inviting atmosphere where you can relax and enjoy a bespoke lash transformation.
                 </p>
                 <p>
-                  My studio maintains the highest standards of hygiene and professionalism, using only premium materials and proven techniques to ensure lasting, beautiful results.
+                  At Ruemi Beauty, we believe that true beauty is about feeling as good as you look. Join us and discover the difference luxurious lashes can make in elevating your appearance!
                 </p>
                 <p>
                   Every client receives a personalized consultation to determine the perfect look that enhances their natural features while maintaining the health of their natural lashes.
@@ -364,16 +356,16 @@ const RuemiBeautyWebsite = () => {
 
               <div className="grid grid-cols-3 gap-8 pt-8 border-t border-neutral-200">
                 <div className="text-center">
-                  <p className="text-3xl font-light text-neutral-900">500+</p>
-                  <p className="text-sm text-neutral-500 mt-1">Satisfied Clients</p>
+                  <p className="text-3xl font-light text-neutral-900">✓</p>
+                  <p className="text-sm text-neutral-500 mt-1">Certified Lash Artist</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-light text-neutral-900">5+</p>
-                  <p className="text-sm text-neutral-500 mt-1">Years Experience</p>
+                  <p className="text-3xl font-light text-neutral-900">✓</p>
+                  <p className="text-sm text-neutral-500 mt-1">Premium Products</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-light text-neutral-900">100%</p>
-                  <p className="text-sm text-neutral-500 mt-1">Premium Materials</p>
+                  <p className="text-3xl font-light text-neutral-900">✓</p>
+                  <p className="text-sm text-neutral-500 mt-1">Personalized Care</p>
                 </div>
               </div>
             </div>
@@ -515,7 +507,7 @@ const RuemiBeautyWebsite = () => {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-24 bg-neutral-50">
+      <section id="testimonials" className="py-16 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <p className="text-sm font-medium tracking-widest uppercase text-neutral-500 mb-4">
@@ -555,6 +547,7 @@ const RuemiBeautyWebsite = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16">
             
+            {/* Left Side - Contact Info */}
             <div className="space-y-8">
               <div>
                 <p className="text-sm font-medium tracking-widest uppercase text-neutral-400 mb-4">
@@ -574,113 +567,48 @@ const RuemiBeautyWebsite = () => {
                 
                 <div>
                   <p className="text-neutral-400 mb-2">Contact Information</p>
-                  <p className="text-lg">Phone: [Your Phone Number]</p>
-                  <p className="text-lg">Email: [Your Email]</p>
+                  <p className="text-lg">Phone: 019 8282989</p>
                 </div>
                 
                 <div>
                   <p className="text-neutral-400 mb-2">Studio Hours</p>
                   <p className="text-lg">By Appointment Only</p>
-                  <p className="text-neutral-400">Tuesday - Saturday: 9:00 AM - 6:00 PM</p>
+                  <p className="text-neutral-400">Monday - Sunday: 9:00 AM - 6:00 PM</p>
                 </div>
-              </div>
-
-              <div className="flex space-x-6 pt-8">
-                {[
-                  { name: 'Instagram', icon: '📷' },
-                  { name: 'TikTok', icon: '🎵' },
-                  { name: 'Facebook', icon: '👥' },
-                  { name: 'WhatsApp', icon: '💬' }
-                ].map((social, index) => (
-                  <button
-                    key={index}
-                    className="w-12 h-12 border border-neutral-700 flex items-center justify-center hover:border-white hover:bg-white hover:text-neutral-900 transition-all duration-300"
-                    title={social.name}
-                  >
-                    <span className="text-lg">{social.icon}</span>
-                  </button>
-                ))}
               </div>
             </div>
 
+            {/* Right Side - Booking Options */}
             <div className="bg-neutral-800 p-8 space-y-6">
-              <h3 className="text-2xl font-light">Schedule Your Appointment</h3>
+              <h3 className="text-2xl font-light mb-4">Schedule Your Appointment</h3>
               
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-neutral-400 mb-2">Full Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 focus:border-white transition-colors duration-300 outline-none"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-neutral-400 mb-2">Email Address</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 focus:border-white transition-colors duration-300 outline-none"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-neutral-400 mb-2">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 focus:border-white transition-colors duration-300 outline-none"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-neutral-400 mb-2">Service Interest</label>
-                  <select className="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 focus:border-white transition-colors duration-300 outline-none">
-                    <option>Select a service</option>
-                    <optgroup label="Lash Extensions">
-                      <option>Classic Lash Extensions</option>
-                      <option>Volume Lash Extensions</option>
-                      <option>Hybrid Lash Extensions</option>
-                      <option>Mega Volume Lash Extensions</option>
-                    </optgroup>
-                    <optgroup label="Lash Maintenance">
-                      <option>Classic Lash Fills</option>
-                      <option>Volume Lash Fills</option>
-                      <option>Lash Removal</option>
-                    </optgroup>
-                    <optgroup label="Natural Lash Services">
-                      <option>Lash Lift & Tint</option>
-                      <option>Lash Tint Only</option>
-                      <option>Lash Lift Only</option>
-                    </optgroup>
-                    <optgroup label="Eyebrow Services">
-                      <option>Precision Brow Shaping</option>
-                      <option>Brow Tinting</option>
-                      <option>Brow Lamination</option>
-                      <option>Complete Brow Package</option>
-                    </optgroup>
-                  </select>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-neutral-400 mb-2">Message</label>
-                  <textarea 
-                    rows="4" 
-                    className="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 focus:border-white transition-colors duration-300 outline-none resize-none"
-                    placeholder="Tell us about your desired look or any questions..."
-                  ></textarea>
-                </div>
-              </div>
-              
-              <button className="w-full px-8 py-4 bg-white text-neutral-900 text-sm font-medium tracking-wide uppercase hover:bg-neutral-100 transition-all duration-300">
-                Send Message
-              </button>
-              
-              <div className="text-center pt-4">
-                <button className="text-sm text-neutral-400 hover:text-white transition-colors duration-300 border-b border-neutral-600 hover:border-white">
-                  Or book directly via Google Calendar
-                </button>
+              <p className="text-neutral-300 leading-relaxed">
+                Choose your preferred booking method below. We'll confirm your appointment and answer any questions.
+              </p>
+
+              {/* Google Calendar Button - PASTE YOUR LINK HERE */}
+              <a
+                href="https://calendar.app.google/fGv1XCtfZnyGDToE9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full px-8 py-4 bg-white text-neutral-900 text-center text-sm font-medium tracking-wide uppercase hover:bg-neutral-100 transition-all duration-300"
+              >
+                Book via Google Calendar
+              </a>
+
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/60198282989?text=Hi%20Ruemi%20Beauty!%20I'd%20like%20to%20book%20an%20appointment%20for%20lash%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full px-8 py-4 bg-green-600 text-white text-center text-sm font-medium tracking-wide uppercase hover:bg-green-700 transition-all duration-300"
+              >
+                Book via WhatsApp
+              </a>
+              <div className="pt-4 border-t border-neutral-700">
+                <p className="text-sm text-neutral-400 text-center">
+                  Questions? Contact us via WhatsApp for immediate assistance!
+                </p>
               </div>
             </div>
           </div>
