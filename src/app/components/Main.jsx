@@ -373,7 +373,7 @@ const RuemiBeautyWebsite = () => {
             <div className="relative">
               <div className="aspect-[3/4] bg-neutral-200 relative overflow-hidden">
                 <Image
-                  src="/images/services/hero.jpg"
+                  src="/images/hero.jpg"
                   alt="Professional portrait of Ruemi Beauty lash artist"
                   fill
                   className="object-cover"
