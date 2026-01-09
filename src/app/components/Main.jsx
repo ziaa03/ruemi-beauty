@@ -5,104 +5,146 @@ import Image from 'next/image';
 
 const serviceCategories = {
   lashes: {
-    title: "Lash Extensions",
+    title: "Eyelash Extensions",
     description: "Professional lash extension services tailored to your eye shape and style",
     services: [
       {
-        title: "Japanese Airlash Extensions",
-        description: "Light and Airy with a mix of short and long strands. Perfect for everyday elegance and a subtle, natural look.",
-        price: "RM75",
-        features: ["Ease of Care: 10/10"]
+        title: "Japanese Classics",
+        price: "RM80"
       },
       {
-        title: "YY Lash Extensions",
-        description: "Criss-cross design with a wispy effect. Ideal for a soft, fluttery appearance that enhances natural beauty.",
-        price: "RM75",
-        features: ["Ease of Care: 9/10"]
+        title: "Japanese Airlash",
+        price: "RM80"
       },
       {
-        title: "Soft Volume Lash Extensions",
-        description: "Thin fans for a dark lash line with a soft, fluffy finish. Great for a fuller look without heavy volume.",
-        price: "RM85",
-        features: ["Ease of Care: 8/10"]
+        title: "YY Volume",
+        price: "RM80"
       },
       {
-        title: "Chinese Style (Sunflower)",
-        description: "Light, airy, eye-opening effect with a mix of short and long strands. Perfect for a natural yet enhanced look.",
-        price: "RM99++",
-        features: ["Ease of Care: 7/10"]
+        title: "Hybrid Volume (Single Strand + YY)",
+        price: "RM80"
       },
       {
-        title: "Chinese Style (Manhwa)",
-        description: "Dramatic, voluminous lashes with a bold, glamorous finish. Ideal for special occasions or those seeking a standout look.",
-        price: "RM99++",
-        features: ["Ease of Care: 6/10"]
-      }
-    ]
-  },
-  maintenance: {
-    title: "Lash Maintenance",
-    description: "Professional maintenance services to keep your lashes looking perfect",
-    services: [
-      {
-        title: "Classic Lash Fills",
-        description: "Professional touch-ups for classic lash extensions to maintain fullness and extend wear time.",
-        price: "RM80",
-        features: ["Replace fallen lashes", "Maintain fullness", "Every 2-3 weeks", "Extends lash life"]
+        title: "Soft Volume (0.07 WW)",
+        price: "RM90"
       },
       {
-        title: "Volume Lash Fills",
-        description: "Specialized fills for volume lash extensions, maintaining that dramatic, full appearance.",
-        price: "RM100",
-        features: ["Volume technique fills", "Maintains drama", "Expert application", "Seamless blending"]
+        title: "Heavy Volume (0.12 WW)",
+        price: "RM90"
       },
       {
-        title: "Lash Removal",
-        description: "Safe, professional removal of lash extensions without damage to natural lashes.",
-        price: "RM40",
-        features: ["Safe removal process", "No damage to naturals", "Professional grade remover", "Aftercare included"]
-      }
-    ]
-  },
-  natural: {
-    title: "Natural Lash Services",
-    description: "Enhance your natural lashes without extensions",
-    services: [
+        title: "Manhwa 漫画款",
+        price: "RM110"
+      },
       {
-        title: "Korean Keratin Lash Lift",
-        description: "Gentle keratin formula with Korean technique for a precise, tidy lift from the root.",
-        price: "RM75",
-        features: ["Safe & Gentle", "Ease of Care: 10/10"]
+        title: "Thai Manhwa 泰式款",
+        price: "RM110"
+      },
+      {
+        title: "Sunflower 太阳花",
+        price: "RM110"
+      },
+      {
+        title: "Custom Design 定制设计",
+        price: "RM110"
+      },
+      {
+        title: "Classic Lower Lash",
+        price: "RM15-RM25"
+      },
+      {
+        title: "Manhwa Lower Lash",
+        price: "RM15-RM25"
       }
     ]
   },
   brows: {
-    title: "Eyebrow Services",
-    description: "Professional brow shaping and enhancement services",
+    title: "Brow & Lash Services",
+    description: "Professional brow shaping and lash lifting services",
     services: [
       {
-        title: "Brow Tint",
-        description: "Professional eyebrow tinting to define and enhance your natural brow color.",
-        price: "RM50",
-        features: ["Lasts: 1 week on skin, 4 weeks on hair"]
-      },
-      {
         title: "Brow Lamination",
-        description: "Trending brow treatment that creates fluffy, fuller-looking brows with a groomed finish.",
-        price: "RM50",
-        features: ["Lasts: 6-8 weeks"]
+        price: "RM50"
       },
       {
-        title: "Brow Lamination + Tint",
-        description: "Lifted and Tinted brows for full, defined looks. Perfect for enhancing natural brow shape and color.",
-        price: "RM100",
-        features: ["Brow Tint: 1 week on skin, 3-4 weeks on brows", "Brow Lami: 6-8 weeks"]
+        title: "Brow Tint",
+        price: "RM50"
       },
       {
-        title: "Complete Brow Package",
-        description: "Comprehensive brow service including shaping, tinting, and lamination for the ultimate brow transformation.",
-        price: "RM125",
-        features: ["Shape + Tint + Lamination", "Best value package"]
+        title: "Brow Wax + Shape",
+        price: "RM35"
+      },
+      {
+        title: "Brow Lamination + Tint + Wax + Shape",
+        price: "RM125"
+      },
+      {
+        title: "Korean Lash Lift - Top Lash",
+        price: "RM85"
+      },
+      {
+        title: "Korean Lash Lift - Bottom Lash",
+        price: "RM15"
+      },
+      {
+        title: "Korean Lash Lift - Tint (Top & Bottom)",
+        price: "RM20"
+      }
+    ]
+  },
+  ipl: {
+    title: "IPL Skin Lasering",
+    description: "Professional laser hair removal treatments",
+    services: [
+      {
+        title: "Underarm - Trial",
+        price: "RM90"
+      },
+      {
+        title: "Underarm - Package x6",
+        price: "RM480"
+      },
+      {
+        title: "Upper Lip Area - Trial",
+        price: "RM40"
+      },
+      {
+        title: "Upper Lip Area - Package x6",
+        price: "RM198"
+      }
+    ]
+  },
+  facials: {
+    title: "Facial Treatments",
+    description: "Rejuvenating facial treatments for healthy, glowing skin",
+    services: [
+      {
+        title: "Glow Basic Facial",
+        price: "RM75"
+      },
+      {
+        title: "Deep Clean Standard Facial",
+        price: "RM85"
+      },
+      {
+        title: "Deep Clean Premium Facial",
+        price: "RM120"
+      },
+      {
+        title: "Purify Acne Treatment",
+        price: "RM297"
+      },
+      {
+        title: "Add-on: Ampoule (Hydrating/Brightening/DNA Fresh Cell)",
+        price: "+RM25"
+      },
+      {
+        title: "Add-on: Soothing Treatment",
+        price: "+RM20"
+      },
+      {
+        title: "Add-on: Scalp Massage",
+        price: "+RM10"
       }
     ]
   }
@@ -183,8 +225,8 @@ const RuemiBeautyWebsite = () => {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-700 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-neutral-200/50' 
-          : 'bg-transparent'
+          ? 'bg-white shadow-md border-b border-neutral-200' 
+          : 'bg-white shadow-sm border-b border-neutral-100'
       }`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-20">
@@ -270,7 +312,7 @@ const RuemiBeautyWebsite = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8">
               <div className="space-y-4">
                 <p className="text-sm font-medium tracking-widest uppercase text-neutral-500">
                   Professional Lash Artistry
@@ -284,7 +326,7 @@ const RuemiBeautyWebsite = () => {
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="px-8 py-4 bg-neutral-900 text-white text-sm font-medium tracking-wide uppercase hover:bg-neutral-800 transition-all duration-300"
@@ -300,16 +342,20 @@ const RuemiBeautyWebsite = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="aspect-[4/5] bg-neutral-200 relative overflow-hidden">
-                <div 
-                  className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
-                  style={{ backgroundImage: `url('${heroImages[currentImageIndex]}')` }}
+            <div className="relative order-first lg:order-last">
+              <div className="aspect-[3/4] lg:aspect-[4/5] bg-neutral-200 relative overflow-hidden rounded-lg">
+                <Image
+                  src={heroImages[currentImageIndex]}
+                  alt="Ruemi Beauty lash extensions showcase"
+                  fill
+                  className="object-cover transition-all duration-1000"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/20 to-transparent"></div>
                 
                 {/* Image Navigation Dots */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
                   {heroImages.map((_, index) => (
                     <button
                       key={index}
@@ -426,68 +472,36 @@ const RuemiBeautyWebsite = () => {
             </p>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {serviceCategories[activeServiceTab].services.map((service, index) => (
-              <div 
-                key={index}
-                className="group bg-white shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer border border-neutral-100 overflow-hidden"
+          {/* Services Grid - Clean Price List */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white rounded-lg shadow-sm border border-neutral-200 overflow-hidden">
+              {serviceCategories[activeServiceTab].services.map((service, index) => (
+                <div 
+                  key={index}
+                  className={`flex items-center justify-between p-5 hover:bg-neutral-50 transition-colors duration-200 ${
+                    index !== serviceCategories[activeServiceTab].services.length - 1 
+                      ? 'border-b border-neutral-100' 
+                      : ''
+                  }`}
+                >
+                  <h4 className="text-base font-medium text-neutral-900 flex-1">
+                    {service.title}
+                  </h4>
+                  <span className="text-lg font-medium text-neutral-900 ml-4 whitespace-nowrap">
+                    {service.price}
+                  </span>
+                </div>
+              ))}
+            </div>
+            
+            <div className="mt-8 text-center">
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="px-8 py-3 bg-neutral-900 text-white text-sm font-medium tracking-wide uppercase hover:bg-neutral-800 transition-all duration-300"
               >
-                {/* Service Image */}
-                <div className="aspect-[4/3] bg-neutral-100 relative overflow-hidden">
-                  <Image
-                    src={`/images/services/${activeServiceTab}-${index + 1}.jpg`}
-                    alt={service.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const placeholder = e.currentTarget.parentNode.querySelector('.placeholder');
-                      if (!placeholder) {
-                        const div = document.createElement('div');
-                        div.className = 'placeholder absolute inset-0 flex items-center justify-center text-neutral-400 text-sm';
-                        div.textContent = 'Service Image';
-                        e.currentTarget.parentNode.appendChild(div);
-                      }
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/30 to-transparent"></div>
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                    <span className="text-sm font-medium text-neutral-900">{service.price}</span>
-                  </div>
-                </div>
-
-                <div className="p-8 space-y-6">
-                  <div>
-                    <h4 className="text-xl font-medium mb-3 group-hover:text-neutral-600 transition-colors duration-300">
-                      {service.title}
-                    </h4>
-                    <p className="text-neutral-600 leading-relaxed mb-4">
-                      {service.description}
-                    </p>
-                  </div>
-
-                  {/* Service Features */}
-                  <div className="grid grid-cols-1 gap-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-neutral-600">
-                        <div className="w-1.5 h-1.5 bg-neutral-400 rounded-full mr-3"></div>
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="pt-4 border-t border-neutral-100">
-                    <button 
-                      onClick={() => scrollToSection('contact')}
-                      className="text-sm font-medium tracking-wide uppercase text-neutral-900 hover:text-neutral-600 transition-colors duration-300"
-                    >
-                      Book This Service →
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
+                Book Your Appointment
+              </button>
+            </div>
           </div>
 
           {/* Service Packages CTA */}
