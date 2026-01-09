@@ -317,7 +317,7 @@ const RuemiBeautyWebsite = () => {
                 <p className="text-sm font-medium tracking-widest uppercase text-neutral-500">
                   Professional Lash Artistry
                 </p>
-                <h1 className="text-5xl lg:text-7xl font-light leading-tight">
+                <h1 className="text-5xl lg:text-5xl font-light leading-tight">
                   Enhance Your
                   <span className="block font-medium">Natural Beauty</span>
                 </h1>
@@ -500,25 +500,11 @@ const RuemiBeautyWebsite = () => {
               </button>
             </div>
           </div>
-
-          {/* Service Packages CTA */}
-          <div className="mt-16 text-center p-8 bg-white border border-neutral-200">
-            <h3 className="text-2xl font-medium mb-4">Custom Service Packages Available</h3>
-            <p className="text-neutral-600 mb-6 max-w-2xl mx-auto">
-              Combine multiple services for the ultimate beauty transformation. 
-            </p>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="px-8 py-3 bg-neutral-900 text-white text-sm font-medium tracking-wide uppercase hover:bg-neutral-800 transition-all duration-300"
-            >
-              Discuss Custom Package
-            </button>
-          </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="bg-neutral-50">
+      <section id="testimonials" className="pb-10 md:pb-24 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <p className="text-sm font-medium tracking-widest uppercase text-neutral-500 mb-4">
@@ -632,9 +618,6 @@ const RuemiBeautyWebsite = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-neutral-500 text-sm">
               © 2025 Ruemi Beauty. All rights reserved.
-            </p>
-            <p className="text-neutral-500 text-sm">
-              Professional Lash & Beauty Services
             </p>
           </div>
         </div>
