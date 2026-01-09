@@ -442,9 +442,6 @@ const RuemiBeautyWebsite = () => {
               Comprehensive
               <span className="block font-medium">Lash & Beauty Services</span>
             </h2>
-            <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              From natural enhancement to dramatic transformation, discover our complete range of professional services designed to enhance your unique beauty.
-            </p>
           </div>
 
           {/* Service Category Tabs */}
