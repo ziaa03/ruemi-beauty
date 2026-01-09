@@ -306,7 +306,7 @@ const RuemiBeautyWebsite = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center bg-neutral-100">
+      <section id="home" className="relative min-h-screen flex items-center bg-neutral-100 pt-20">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-50/80"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
@@ -505,7 +505,7 @@ const RuemiBeautyWebsite = () => {
           <div className="mt-16 text-center p-8 bg-white border border-neutral-200">
             <h3 className="text-2xl font-medium mb-4">Custom Service Packages Available</h3>
             <p className="text-neutral-600 mb-6 max-w-2xl mx-auto">
-              Combine multiple services for the ultimate beauty transformation. Ask about our package deals and loyalty program during your consultation.
+              Combine multiple services for the ultimate beauty transformation. 
             </p>
             <button
               onClick={() => scrollToSection('contact')}
@@ -518,7 +518,7 @@ const RuemiBeautyWebsite = () => {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-16 bg-neutral-50">
+      <section id="testimonials" className="bg-neutral-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <p className="text-sm font-medium tracking-widest uppercase text-neutral-500 mb-4">
